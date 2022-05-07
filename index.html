@@ -27,7 +27,7 @@
     <script src='main.js'></script>
 </head>
 
-<body>
+<body onload="setTimeout(loadVideo, 5000)">
     <div class="container">
         <h1>SƠN TÙNG M-TP | THERE'S NO ONE AT ALL | OFFICIAL MUSIC VIDEO</h1>
 
@@ -66,9 +66,14 @@
         }
         function loadVideo() {
             ele = document.getElementById("video")
-            wi = ele.offsetWidth
-            he = wi * 9 / 21
-            ele.style.height = he + 'px'
+            // wi = ele.offsetWidth
+            // he = wi * 9 / 21
+            // ele.style.height = he + 'px'
+
+            //autoplay
+            ele.play();
+
+            
         }
     </script>
 </body>
